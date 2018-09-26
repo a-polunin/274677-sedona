@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артём Полунин](https://up.htmlacademy.ru/adaptive/15/user/274677).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Казанцев] (https://htmlacademy.ru/profile/id24186).
 
 ---
 

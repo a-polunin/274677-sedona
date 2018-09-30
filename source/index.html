@@ -27,56 +27,62 @@
     <a href="#" class="page-header__logo">
       <img src="#" alt="Sedona" class="page-header__logo-img">
     </a>
-    <button type="button" class="page-header__toggle"></button>
-    <img src="#" alt="Welcome to Sedona" class="page-header__main-picture--full-size">
+    <button type="button" class="page-header__toggle">Открыть меню</button>
+    <img src="#" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--full-size">
     <h1 class="page-header__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
     <p class="page-header__description">Рассмотрим 5 причин, по которым седона круче, чем гранд Каньон!</p>
   </header>
 
   <main class="page-main">
-    <div class="reason reason-blue">
-      <h2 class="reason__title">Настоящий городок</h2>
-      <b class="reason__number">№1</b>
-      <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-      <img src="#" alt="Sedona city" class="reason__img--city">
-      <ul class="reason__list city-list">
-        <li class="city-list__item">
-          <img src="#" alt="House">
-          <h3 class="city-list__title">Жилье</h3>
-          <p class="city-list_description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    <div class="reasons">
+      <ul class="reasons-list">
+        <li class="reasons-list__item reason reason--blue">
+          <h2 class="reason__title">Настоящий городок</h2>
+          <b class="reason__number">№1</b>
+          <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <img src="#" alt="Sedona city" class="reason__img reason__img--city">
         </li>
-        <li class="city-list__item">
-          <img src="#" alt="souvenirs">
-          <h3 class="city-list__title">Сувениры</h3>
-          <p class="city-list_description">Не только китайского, но и местного проихводства!</p>
+        <li class="reasons-list__item reason reason--blue">
+          <h2 class="reason__title">Там есть мост дьявола</h2>
+          <b class="reason__number">№2</b>
+          <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img src="#" alt="Sedona city" class="reason__img reason__img--bridge">
         </li>
-        <li class="city-list__item">
-          <img src="#" alt="Food">
-          <h3 class="city-list__title">Еда</h3>
-          <p class="city-list_description">Всегда заказывайте фирменный бургер, выне разочаруетесь!</p>
+        <li class="reasons-list__item reason">
+          <h2 class="reason__title">Небольшая площадь</h2>
+          <b class="reason__number">№3</b>
+          <p class="reason__description">Все интересные места находятся очень близко</p>
+        </li>
+        <li class="reasons-list__item reason">
+          <h2 class="reason__title">Красивая дорога</h2>
+          <b class="reason__number">№4</b>
+          <p class="reason__description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+        </li>
+        <li class="reasons-list__item reason">
+          <h2 class="reason__title">Мало туристов</h2>
+          <b class="reason__number">№5</b>
+          <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
+        </li>
+        <li>
+          <ul class="city-list">
+            <li class="city-list__item">
+              <img src="#" alt="House">
+              <h3 class="city-list__title">Жилье</h3>
+              <p class="city-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="city-list__item">
+              <img src="#" alt="souvenirs">
+              <h3 class="city-list__title">Сувениры</h3>
+              <p class="city-list__description">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="city-list__item">
+              <img src="#" alt="Food">
+              <h3 class="city-list__title">Еда</h3>
+              <p class="city-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
         </li>
       </ul>
-    </div>
-    <div class="reason reason-blue">
-      <h2 class="reason__title">Там есть мост дьявола</h2>
-      <b class="reason__number">№2</b>
-      <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-      <img src="#" alt="Sedona city" class="reason__img--bridge">
-    </div>
-    <div class="reason">
-      <h2 class="reason__title">Небольшая площадь</h2>
-      <b class="reason__number">№3</b>
-      <p class="reason__description">Все интересные места находятся очень близко</p>
-    </div>
-    <div class="reason">
-      <h2 class="reason__title">Красивая дорога</h2>
-      <b class="reason__number">№4</b>
-      <p class="reason__description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
-    </div>
-    <div class="reason">
-      <h2 class="reason__title">Мало туристов</h2>
-      <b class="reason__number">№5</b>
-      <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
     </div>
     <div class="find-hotel">
       <h2 class="find-hotel__title">Заинтересовались?</h2>
@@ -89,23 +95,17 @@
     </div>
   </main>
   <footer class="page-footer">
-    <h2 class="page-footer_title">#visitsedona</h2>
+    <h2 class="page-footer__title">#visitsedona</h2>
     <div class="page-footer__contacts contacts">
       <ul class="contacts__list">
         <li class="contacts__item">
-          <a href="#" class="contacts__link">
-            <img src="#" alt="Twitter" class="contacts__img">
-          </a>
+          <a href="#" class="contacts__link"></a>
         </li>
         <li class="contacts__item">
-          <a href="#" class="contacts__link">
-            <img src="#" alt="Facebook" class="contacts__img">
-          </a>
+          <a href="#" class="contacts__link"></a>
         </li>
         <li class="contacts__item">
-          <a href="#" class="contacts__link">
-            <img src="#" alt="Youtube" class="contacts__img">
-          </a>
+          <a href="#" class="contacts__link"></a>
         </li>
       </ul>
     </div>
@@ -115,4 +115,5 @@
     </div>
   </footer>
 </body>
+
 </html>

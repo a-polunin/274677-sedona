@@ -27,37 +27,41 @@
     <a href="#" class="page-header__logo">
       <img src="#" alt="Sedona" class="page-header__logo-img">
     </a>
-    <button type="button" class="page-header__toggle"></button>
-    <img src="#" alt="Welcome to Sedona" class="page-header__main-picture--min-size">
+    <button type="button" class="page-header__toggle">Открыть меню</button>
+    <img src="#" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--min-size">
     <h1 class="page-header__title">Фото и видео</h1>
     <p class="page-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
       политике и экономике.</p>
   </header>
 
   <main class="page-main">
-    <div class="photo-item">
-      <a href="#"><img src="#" alt="Неродные просторы" class="photo-item__img"></a>
-      <p class="photo-item__title">Неродные просторы</p>
-      <p class="photo-item__author">Автор фото: Борис</p>
-      <b class="photo-item__likes">1350</b>
-    </div>
-    <div class="photo-item">
-      <a href="#"><img src="#" alt="Местная растительность" class="photo-item__img"></a>
-      <p class="photo-item__title">Местная растительность</p>
-      <p class="photo-item__author">Автор фото: Сергей</p>
-      <b class="photo-item__likes">143</b>
-    </div>
-    <div class="photo-item">
-      <a href="#"><img src="#" alt="Дорога на север" class="photo-item__img"></a>
-      <p class="photo-item__title">Дорога на север</p>
-      <p class="photo-item__author">Автор фото: Петр</p>
-      <b class="photo-item__likes">96</b>
-    </div>
-    <div class="photo-item">
-      <a href="#"><img src="#" alt="Мост дьявола" class="photo-item__img"></a>
-      <p class="photo-item__title">Мост дьявола</p>
-      <p class="photo-item__author">Автор фото: Антон</p>
-      <b class="photo-item__likes">254</b>
+    <div class="photo">
+      <ul class="photo__list">
+        <li class="photo__item photo-item">
+          <a href="#"><img src="#" alt="Неродные просторы" class="photo-item__img"></a>
+          <p class="photo-item__title">Неродные просторы</p>
+          <p class="photo-item__author">Автор фото: Борис</p>
+          <b class="photo-item__likes">1350</b>
+        </li>
+        <li class="photo__item photo-item">
+          <a href="#"><img src="#" alt="Местная растительность" class="photo-item__img"></a>
+          <p class="photo-item__title">Местная растительность</p>
+          <p class="photo-item__author">Автор фото: Сергей</p>
+          <b class="photo-item__likes">143</b>
+        </li>
+        <li class="photo__item photo-item">
+          <a href="#"><img src="#" alt="Дорога на север" class="photo-item__img"></a>
+          <p class="photo-item__title">Дорога на север</p>
+          <p class="photo-item__author">Автор фото: Петр</p>
+          <b class="photo-item__likes">96</b>
+        </li>
+        <li class="photo__item photo-item">
+          <a href="#"><img src="#" alt="Мост дьявола" class="photo-item__img"></a>
+          <p class="photo-item__title">Мост дьявола</p>
+          <p class="photo-item__author">Автор фото: Антон</p>
+          <b class="photo-item__likes">254</b>
+        </li>
+      </ul>
     </div>
     <div class="video">
       <h2 class="video__title">Все еще сомневаетесь?</h2>
@@ -66,30 +70,25 @@
       <img src="#" alt="Видеопрезентация" class="video__img">
       <div class="video-controls">
         <div class="video-controls__timeline"></div>
-        <img src="#" alt="Repeat" class="video-controls__repeat repeat">
-        <img src="#" alt="Subs" class="video-controls__subs subs">
-        <img src="#" alt="Fullscreen" class="video-controls__fullscreen fullscreen">
+        <div class="video-controls__toggle"></div>
+        <button type="button" class="video-controls__repeat"></button>
+        <button type="button" class="video-controls__subs"></button>
+        <button type="button" class="video-controls__fullscreen"></button>
       </div>
     </div>
   </main>
   <footer class="page-footer">
-    <h2 class="page-footer_title">#visitsedona</h2>
+    <h2 class="page-footer__title">#visitsedona</h2>
     <div class="page-footer__contacts contacts">
       <ul class="contacts__list">
         <li class="contacts__item">
-          <a href="#" class="contacts__link">
-            <img src="#" alt="Twitter" class="contacts__img">
-          </a>
+          <a href="#" class="contacts__link"></a>
         </li>
         <li class="contacts__item">
-          <a href="#" class="contacts__link">
-            <img src="#" alt="Facebook" class="contacts__img">
-          </a>
+          <a href="#" class="contacts__link"></a>
         </li>
         <li class="contacts__item">
-          <a href="#" class="contacts__link">
-            <img src="#" alt="Youtube" class="contacts__img">
-          </a>
+          <a href="#" class="contacts__link"></a>
         </li>
       </ul>
     </div>

@@ -1,24 +1,30 @@
-.reason{
+.reason {
   background-color: #eeeeee;
   padding: 36px 30px;
   color: $grey-color;
-  &--blue{
+
+  &--blue {
     color: #ffffff;
     background-color: $blue-color;
   }
 }
-.reason__title{
+
+.reason__title {
   @include heading();
 }
-.reason__title--white{
+
+.reason__title--white {
   color: #ffffff;
 }
-.reason__title--black{
+
+.reason__title--black {
   color: #000000;
 }
-.reason__number{
+
+.reason__number {
   @include description();
 }
-.reason__description{
+
+.reason__description {
   @include description();
 }

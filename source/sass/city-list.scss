@@ -1,14 +1,17 @@
-.city-list{
+.city-list {
   padding-left: 20px;
-  list-style:none;
+  list-style: none;
 }
-.city-list__item{
+
+.city-list__item {
   padding-left: 50px;
 }
-.city-list__title{
+
+.city-list__title {
   @include heading();
 }
-.city-list__description{
+
+.city-list__description {
   @include description();
   color: $grey-color;
 }

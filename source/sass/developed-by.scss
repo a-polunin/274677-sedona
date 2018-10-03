@@ -1,7 +1,6 @@
-.developed-by{
+.developed-by {}
 
-}
-.developed-by__description{
+.developed-by__description {
   @include description();
   text-transform: uppercase;
 }

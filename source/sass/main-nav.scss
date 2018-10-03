@@ -1,10 +1,12 @@
-.main-nav{
+.main-nav {
   @include heading();
   color: #ffffff;
 }
-.main-nav__list{
+
+.main-nav__list {
   list-style: none;
 }
-.main-nav__item{
+
+.main-nav__item {
   background-color: $blue-color;
 }

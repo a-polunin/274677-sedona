@@ -1,0 +1,9 @@
+.page-footer{
+  background-color: #fefefe;
+  padding-top: 31px;
+  padding-bottom: 25px;
+}
+.page-footer__title{
+  @include heading();
+  font-size: 21px;
+}

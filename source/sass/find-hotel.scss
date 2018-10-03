@@ -1,0 +1,18 @@
+.find-hotel{
+  padding:50px 20px;
+  padding-top: 23px;
+}
+.find-hotel__title{
+  @include heading();
+}
+.find-hotel__description{
+  @include description();
+  color: $grey-color;
+}
+.find-hotel__btn{
+  @include heading();
+  color: #ffffff;
+  font-size: 21px;
+  text-decoration: none;
+  background-color: $blue-color;
+}

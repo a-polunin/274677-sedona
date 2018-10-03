@@ -1,0 +1,11 @@
+.page-header{
+
+}
+.page-header__title{
+  @include heading();
+}
+.page-header__description{
+  @include description();
+  line-height: 26px;
+  color: $grey-color;
+}

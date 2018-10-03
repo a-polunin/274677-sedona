@@ -1,0 +1,31 @@
+.feedback-form{
+
+}
+.feedback-form__label{
+  @include form-label();
+}
+.feedback-form__label--bold{
+  @include heading();
+  text-transform: none;
+}
+.feedback-form__input{
+  box-sizing: border-box;
+  padding-left:22px;
+  padding-right: 22px;
+  padding-top: 19px;
+  padding-bottom: 20px;
+}
+.feedback-form__textarea{
+  box-sizing: border-box;
+  padding-left:22px;
+  padding-right: 22px;
+  padding-top: 19px;
+  padding-bottom: 20px;
+}
+.feedback-form__submit{
+  @include heading();
+  color: #ffffff;
+  font-size: 21px;
+  text-decoration: none;
+  background-color: $blue-color;
+}

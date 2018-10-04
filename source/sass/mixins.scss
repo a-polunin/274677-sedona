@@ -1,0 +1,39 @@
+@mixin heading {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+@mixin description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin photo-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@mixin photo-author {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $grey-color;
+}
+
+@mixin form-label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: $grey-color;
+  text-transform: uppercase;
+}

@@ -1,0 +1,25 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+
+/* index */
+@import "main-nav.scss";
+@import "page-header.scss";
+@import "page-main.scss";
+@import "reasons-list.scss";
+@import "reason.scss";
+@import "city-list.scss";
+@import "find-hotel.scss";
+@import "page-footer.scss";
+@import "contacts.scss";
+@import "developed-by.scss";
+
+/* photo */
+@import "photo.scss";
+@import "photo-item.scss";
+@import "video.scss";
+@import "video-controls.scss";
+
+/* form */
+@import "feedback-form.scss";
+@import "form-item.scss";

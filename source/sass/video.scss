@@ -1,0 +1,13 @@
+.video {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.video__title {
+  @include heading();
+}
+
+.video__description {
+  @include description();
+  color: $grey-color;
+}

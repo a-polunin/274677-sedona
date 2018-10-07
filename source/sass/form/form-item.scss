@@ -1,0 +1,22 @@
+.form-item {
+  border: none;
+  border-top: 2px solid #e5e5e5;
+  text-align: center;
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+
+.form-item__title {
+  @include heading();
+  margin: 0;
+}
+
+.container{
+  display: flex;
+}
+
+@media (min-width: $tablet-width){
+  .form-item{
+    border: none;
+  }
+}

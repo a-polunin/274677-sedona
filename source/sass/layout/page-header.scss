@@ -1,0 +1,53 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__main-picture{
+  margin-top: 55px;
+}
+
+.page-header__main-picture--min-size{
+  height: 130px;
+}
+
+.page-header__toggle{
+  position: absolute;
+}
+
+.page-header__title {
+  @include heading();
+  margin: 0;
+  padding: 0 10px;
+  margin-bottom: 35px;
+}
+
+.page-header__description {
+  @include description();
+  line-height: 26px;
+  color: $grey-color;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.page-header__wrapper {
+  padding: 42px 20px 0px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-header__logo{
+  position: absolute;
+}
+
+@media (min-width: $tablet-width){
+  .page-header__toggle{
+    display: none;
+  }
+  .page-header__title {
+    padding: 0 100px;
+  }
+  .page-header__main-picture{
+    margin-top: 0;
+  }
+}

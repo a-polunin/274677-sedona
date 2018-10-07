@@ -1,0 +1,21 @@
+.page-footer {
+  background-color: #fefefe;
+  padding: 30px 20px 25px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-footer__title {
+  @include heading();
+  font-size: 21px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width){
+  .page-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 25px;
+  }
+}

@@ -1,0 +1,42 @@
+.photo__list {
+  @include reset-list();
+}
+
+.photo__item{
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+
+  .photo__item {
+    width: 50%;
+  }
+
+  .photo-item__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .photo__item:first-child {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .photo__item{
+    width: 33.33%;
+  }
+  .photo-item__description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    width: 100%;
+  }
+}

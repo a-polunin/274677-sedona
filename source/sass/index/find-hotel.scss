@@ -22,11 +22,8 @@
   background-color: $blue-color;
 }
 
-@media (min-width: $tablet-width){
-  .find-hotel__description{
-  }
-
-  .find-hotel__title{
+@media (min-width: $tablet-width) {
+  .find-hotel__title {
     font-size: 30px;
   }
 }

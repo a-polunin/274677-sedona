@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.video__wrapper{
+.video__wrapper {
   padding: 35px 20px 40px;
   text-align: center;
 }
@@ -20,14 +20,14 @@
   margin: 0;
 }
 
-@media (min-width: $tablet-width){
-  .video{
+@media (min-width: $tablet-width) {
+  .video {
     padding: 0 60px;
   }
 }
 
-@media (min-width: $desktop-width){
-  .video{
+@media (min-width: $desktop-width) {
+  .video {
     width: 800px;
   }
 }

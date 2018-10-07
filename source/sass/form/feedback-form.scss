@@ -17,8 +17,8 @@
 }
 
 .feedback-form__submit {
-  width: 100%;
   @include heading();
+  width: 100%;
   color: #ffffff;
   font-size: 21px;
   text-decoration: none;
@@ -26,7 +26,7 @@
   order: 3;
 }
 
-.feedback-form__hint{
+.feedback-form__hint {
   display: none;
   order: 3;
 }
@@ -41,7 +41,7 @@
 
   .feedback-form__fieldset {
     width: 100%;
-    order: 3
+    order: 3;
   }
 
   .feedback-form__fieldset:first-child {
@@ -58,7 +58,7 @@
     width: 50%;
   }
 
-  .feedback-form__hint{
+  .feedback-form__hint {
     display: block;
   }
 }

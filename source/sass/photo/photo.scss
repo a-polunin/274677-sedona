@@ -2,7 +2,7 @@
   @include reset-list();
 }
 
-.photo__item{
+.photo__item {
   position: relative;
 }
 
@@ -28,11 +28,12 @@
   }
 }
 
-@media (min-width: $desktop-width){
-  .photo__item{
+@media (min-width: $desktop-width) {
+  .photo__item {
     width: 33.33%;
   }
-  .photo-item__description{
+
+  .photo-item__description {
     position: absolute;
     bottom: 0;
     left: 0;

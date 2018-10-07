@@ -17,11 +17,12 @@
   color: $grey-color;
 }
 
-@media (min-width: $tablet-width){
-  .city-list{
+@media (min-width: $tablet-width) {
+  .city-list {
     display: flex;
   }
-  .city-list__item{
+
+  .city-list__item {
     padding: 0;
     text-align: center;
     min-height: 330px;

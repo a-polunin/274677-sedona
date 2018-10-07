@@ -1,4 +1,4 @@
-.contacts{
+.contacts {
   margin-bottom: 40px;
 }
 
@@ -13,7 +13,8 @@
   height: 48px;
   margin-right: 6px;
   background-color: $blue-color;
-  &:last-child{
+
+  &:last-child {
     margin-right: 0;
   }
 }

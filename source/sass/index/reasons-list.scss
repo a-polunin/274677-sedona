@@ -8,17 +8,17 @@
   order: 3;
 }
 
-.reasons-list__item:first-child{
+.reasons-list__item:first-child {
   order: 1;
 }
 
-.reason-list__item:last-child{
+.reason-list__item:last-child {
   order: 2;
   width: 100%;
 }
 
-@media (min-width: $tablet-width){
-  .reasons-list{
+@media (min-width: $tablet-width) {
+  .reasons-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -23,14 +23,14 @@
     align-items: center;
   }
 
-  .photo__item:first-child {
+  .photo__item--full-width {
     width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .photo__item {
-    width: 33.33%;
+    width: 33.333333%;
   }
 
   .photo-item__description {

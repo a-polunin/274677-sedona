@@ -41,6 +41,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    padding: 42px 60px 0;
+  }
+
   .page-header__toggle {
     display: none;
   }

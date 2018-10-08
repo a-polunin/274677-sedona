@@ -8,7 +8,14 @@
 }
 
 .feedback-form__input {
+  width: 100%;
   padding: 20px 22px;
+}
+
+.feedback-form__checkbox {
+  margin-right: 25px;
+  width: 56px;
+  height: 56px;
 }
 
 .feedback-form__textarea {

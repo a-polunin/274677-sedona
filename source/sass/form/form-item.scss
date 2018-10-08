@@ -11,12 +11,36 @@
   margin: 0;
 }
 
-.container {
+.form-item__item {
   display: flex;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
   .form-item {
     border: none;
+  }
+
+  .form-item__item--half-width {
+    width: 50%;
+    flex-shrink: 0;
+  }
+
+  .form-item__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 460px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-item__container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .form-item__item {
+    width: auto;
   }
 }

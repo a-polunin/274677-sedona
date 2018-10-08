@@ -1,10 +1,14 @@
 .reason {
   background-color: #eeeeee;
   color: $grey-color;
+}
 
-  &--blue {
-    color: #ffffff;
-    background-color: $blue-color;
+.reason--blue {
+  color: #ffffff;
+  background-color: $blue-color;
+
+  .reason__wrapper {
+    padding: 40px 20px;
   }
 }
 
@@ -12,14 +16,7 @@
   width: 320px;
   margin: 0 auto;
   text-align: center;
-
-  &--40-20 {
-    padding: 40px 20px;
-  }
-
-  &--30-20 {
-    padding: 30px 20px;
-  }
+  padding: 30px 20px;
 }
 
 .reason__title {
@@ -47,7 +44,7 @@
 @media (min-width: $tablet-width) {
   .reason {
     display: flex;
-    width: 33.33%;
+    width: 33.333333%;
 
     &--blue {
       width: 100%;

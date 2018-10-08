@@ -2,6 +2,7 @@
 @import "mixins.scss";
 @import "fonts.scss";
 @import "normalize.scss";
+@import "general.scss";
 
 /* layout */
 @import "./layout/contacts.scss";
@@ -26,13 +27,3 @@
 /* form */
 @import "./form/feedback-form.scss";
 @import "./form/form-item.scss";
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}

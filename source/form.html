@@ -57,13 +57,15 @@
       </fieldset>
       <fieldset class="feedback-form__fieldset form-item">
         <h2 class="form-item__title">Контактная информация:</h2>
-        <div class="form-item__item">
-          <label for="input-phone" class="feedback-form__label">Контактный телефон*:</label>
-          <input type="tel" class="feedback-form__input" placeholder="Введите телефон" id="input-phone" name="input-phone">
-        </div>
-        <div class="form-item__item">
-          <label for="input-email" class="feedback-form__label">Электронная почта*:</label>
-          <input type="email" class="feedback-form__input" placeholder="Введите e-mail" id="input-email" name="input-email">
+        <div class="form-item__container">
+          <div class="form-item__item form-item__item--contact">
+            <label for="input-phone" class="feedback-form__label">Контактный телефон*:</label>
+            <input type="tel" class="feedback-form__input" placeholder="Введите телефон" id="input-phone" name="input-phone">
+          </div>
+          <div class="form-item__item form-item__item--contact">
+            <label for="input-email" class="feedback-form__label">Электронная почта*:</label>
+            <input type="email" class="feedback-form__input" placeholder="Введите e-mail" id="input-email" name="input-email">
+          </div>
         </div>
       </fieldset>
       <fieldset class="feedback-form__fieldset form-item">
@@ -83,7 +85,7 @@
       </fieldset>
       <fieldset class="feedback-form__fieldset form-item">
         <h2 class="form-item__title">Посещенные достопримечательности</h2>
-        <div class="form-item__container">
+        <div class="form-item__container form-item__container--attraction">
           <div class="form-item__item form-item__item--half-width">
             <input type="checkbox" class="feedback-form__checkbox" id="checkbox-bridge" name="checkbox-bridge" checked>
             <label for="checkbox-bridge" class="feedback-form__label feedback-form__label--bold">Мост дьявола</label>

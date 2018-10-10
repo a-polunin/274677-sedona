@@ -1,18 +1,39 @@
 .photo-card {
   border-top: 2px solid #e5e5e5;
   padding: 22px 20px;
+
+  &:last-child {
+    border-bottom: 2px solid #e5e5e5;
+  }
 }
 
 .photo-card__title {
   @include photo-title();
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 8px;
 }
 
 .photo-card__author {
   @include photo-author();
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .photo-card__likes {
   @include photo-title();
+  position: relative;
+  padding-left: 37px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 22px;
+    height: 21px;
+    background-image: url('../../img/icon-like.svg');
+  }
 }
 
 
@@ -21,12 +42,17 @@
     padding: 0;
     border: 0;
     margin: 0;
+    &:last-child{
+      border: none;
+    }
   }
 
   .photo-card__description {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f2f2f2;
+    padding: 0 20px;
   }
 }
 

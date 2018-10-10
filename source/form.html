@@ -33,7 +33,7 @@
     <img src="./img/bg-back-mobile@1x.jpg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--min-size">
     <div class="page-header__wrapper">
       <h1 class="page-header__title">Оставьте свой отзыв</h1>
-      <p class="page-header__description">Помогите нашим отелям стать лучше! Оставье отзыв о них, а также о посещенных
+      <p class="page-header__description">Помогите нашим отелям стать лучше! Оставье отзыв о них,<br>а также о посещенных
         вами достопримечательностях</p>
     </div>
   </header>
@@ -41,28 +41,28 @@
   <main class="page-main">
     <form action="https://echo.htmlacademy.ru" method="POST" class="feedback-form">
       <fieldset class="feedback-form__fieldset form-item">
-        <h2 class="form-item__title">Представьтесь</h2>
+        <h2 class="form-item__title">Представьтесь:</h2>
         <div class="form-item__item">
-          <label for="input-name" class="feedback-form__label">Имя*:</label>
+          <label for="input-name" class="feedback-form__label feedback-form__label--fullname">Имя*:</label>
           <input type="text" class="feedback-form__input" placeholder="Петр" id="input-name" name="input-name">
         </div>
         <div class="form-item__item">
-          <label for="input-surname" class="feedback-form__label">Фамилия*:</label>
+          <label for="input-surname" class="feedback-form__label feedback-form__label--fullname">Фамилия*:</label>
           <input type="text" class="feedback-form__input" placeholder="Иванов" id="input-surname" name="input-surname">
         </div>
         <div class="form-item__item">
-          <label for="input-patron" class="feedback-form__label">Отчество:</label>
+          <label for="input-patron" class="feedback-form__label feedback-form__label--fullname">Отчество:</label>
           <input type="text" class="feedback-form__input" placeholder="Александрович" id="input-patron" name="input-patron">
         </div>
       </fieldset>
       <fieldset class="feedback-form__fieldset form-item">
         <h2 class="form-item__title">Контактная информация:</h2>
         <div class="form-item__container">
-          <div class="form-item__item form-item__item--contact">
+          <div class="form-item__item form-item__item--contact form-item__item--tel">
             <label for="input-phone" class="feedback-form__label">Контактный телефон*:</label>
             <input type="tel" class="feedback-form__input" placeholder="Введите телефон" id="input-phone" name="input-phone">
           </div>
-          <div class="form-item__item form-item__item--contact">
+          <div class="form-item__item form-item__item--contact form-item__item--email">
             <label for="input-email" class="feedback-form__label">Электронная почта*:</label>
             <input type="email" class="feedback-form__input" placeholder="Введите e-mail" id="input-email" name="input-email">
           </div>
@@ -117,13 +117,13 @@
     <h2 class="page-footer__title">#visitsedona</h2>
     <div class="page-footer__contacts contacts">
       <ul class="contacts__list">
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--tw">
           <a href="#" class="contacts__link"></a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--fb">
           <a href="#" class="contacts__link"></a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--yt">
           <a href="#" class="contacts__link"></a>
         </li>
       </ul>

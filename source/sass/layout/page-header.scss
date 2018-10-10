@@ -4,7 +4,9 @@
 }
 
 .page-header__main-picture {
-  margin-top: 55px;
+  position: relative;
+  top: -20px;
+  z-index: 1;
 }
 
 .page-header__main-picture--min-size {
@@ -12,7 +14,16 @@
 }
 
 .page-header__toggle {
-  position: absolute;
+  /*   position: absolute;
+  bottom: 290px;
+  right: 0; */
+  display: block;
+  width: 23px;
+  height: 22px;
+  margin-top: 20px;
+  padding: 0;
+  background: transparent url('../../img/icon-menu.svg') no-repeat;
+  border: none;
 }
 
 .page-header__title {
@@ -28,6 +39,10 @@
   color: $grey-color;
   text-transform: uppercase;
   margin: 0;
+
+  br {
+    display: none;
+  }
 }
 
 .page-header__wrapper {
@@ -36,8 +51,15 @@
   text-align: center;
 }
 
+.page-header__container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+  z-index: 10;
+}
+
 .page-header__logo {
-  position: absolute;
+  margin-right: 67px;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,5 +77,9 @@
 
   .page-header__main-picture {
     margin-top: 0;
+  }
+
+  .page-header__description br {
+    display: inline;
   }
 }

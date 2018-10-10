@@ -6,16 +6,31 @@
 
 .find-hotel__title {
   @include heading();
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .find-hotel__description {
   @include description();
+  line-height: 24px;
   color: $grey-color;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 37px;
+
+  br {
+    display: none;
+  }
 }
 
 .find-hotel__btn {
   @include heading();
+  display: inline-block;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 22px;
   color: #ffffff;
   font-size: 21px;
   text-decoration: none;
@@ -23,7 +38,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .find-hotel {
+    padding: 30px 0 50px;
+    max-width: 457px;
+    margin: 0 auto;
+  }
+
   .find-hotel__title {
     font-size: 30px;
+  }
+
+  .find-hotel__description br {
+    display: inline;
   }
 }

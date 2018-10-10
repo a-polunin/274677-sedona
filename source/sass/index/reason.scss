@@ -13,15 +13,27 @@
 }
 
 .reason__wrapper {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   text-align: center;
   padding: 30px 20px;
+
+  &--with-border:after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -1px;
+    left: 20px;
+    height: 1px;
+    background: #d6d6d6;
+  }
 }
 
 .reason__title {
   @include heading();
   margin: 0;
+  margin-bottom: 12px;
 }
 
 .reason__title--white {
@@ -34,11 +46,14 @@
 
 .reason__number {
   @include description();
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .reason__description {
   @include description();
   margin: 0;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,5 +70,18 @@
 
   .reason--reverse {
     flex-direction: row-reverse;
+  }
+
+  .reason__title {
+    padding: 0 40px;
+  }
+
+  .reason__description {
+    padding: 0 30px;
+  }
+
+  .reason__wrapper--with-border:after {
+    content: "";
+    display: none;
   }
 }

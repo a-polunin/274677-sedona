@@ -9,16 +9,48 @@
 .form-item__title {
   @include heading();
   margin: 0;
+  margin-bottom: 22px;
 }
 
 .form-item__item {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+}
 
-  &--contact {
-    flex-direction: column;
+.form-item__item--contact {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 41px;
+    right: 0;
+    width: 58px;
+    height: 56px;
+    background: #e6e6e6 no-repeat center;
+  }
+
+  .feedback-form__label {
+    margin-left: 22px;
+    margin-bottom: 15px;
+  }
+
+  .feedback-form__input {
+    padding-right: 65px;
   }
 }
+
+.form-item__item--tel:after{
+  background-image: url('../../img/icon-phone.svg');
+}
+
+.form-item__item--email:after{
+  background-image: url('../../img/icon-mail.svg');
+}
+
 
 @media (min-width: $tablet-width) {
   .form-item {

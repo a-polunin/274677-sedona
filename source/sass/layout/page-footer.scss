@@ -16,6 +16,15 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
-    padding: 30px 60px 25px;
+    padding: 36px 60px;
+    align-items: center;
+  }
+
+  .page-footer__title {
+    margin: 0;
+  }
+
+  .page-footer__contacts {
+    margin: 0;
   }
 }

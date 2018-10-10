@@ -2,3 +2,9 @@
   @include description();
   text-transform: uppercase;
 }
+
+.developed-by__img{
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: -10px;
+}

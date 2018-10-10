@@ -8,7 +8,30 @@
 }
 
 .main-nav__item {
+  text-align: center;
+}
+
+.main-nav__item a{
+  @include heading();
+  display: block;
+  padding: 10px 0;
+  line-height: 40px;
+  color: #ffffff;
+  text-decoration: none;
   background-color: $blue-color;
+  border-top: 1px solid #678fa8;
+  border-bottom: 1px solid #9ac2db;
+}
+
+.main-nav__btn-close{
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  background: url('../../img/icon-cross.svg') no-repeat center;
+  border: 0;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,0 +1,41 @@
+.photo-card {
+  border-top: 2px solid #e5e5e5;
+  padding: 22px 20px;
+}
+
+.photo-card__title {
+  @include photo-title();
+}
+
+.photo-card__author {
+  @include photo-author();
+}
+
+.photo-card__likes {
+  @include photo-title();
+}
+
+
+@media (min-width: $tablet-width) {
+  .photo-card {
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+
+  .photo-card__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-card__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    width: 100%;
+  }
+}

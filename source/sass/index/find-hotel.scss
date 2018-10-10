@@ -1,6 +1,7 @@
 .find-hotel {
-  padding: 50px 20px;
-  padding-top: 23px;
+  padding: 30px 20px 50px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .find-hotel__title {
@@ -10,6 +11,7 @@
 .find-hotel__description {
   @include description();
   color: $grey-color;
+  text-transform: uppercase;
 }
 
 .find-hotel__btn {
@@ -18,4 +20,10 @@
   font-size: 21px;
   text-decoration: none;
   background-color: $blue-color;
+}
+
+@media (min-width: $tablet-width) {
+  .find-hotel__title {
+    font-size: 30px;
+  }
 }

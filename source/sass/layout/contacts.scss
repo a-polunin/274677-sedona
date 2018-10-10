@@ -1,0 +1,20 @@
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contacts__list {
+  @include reset-list();
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__item {
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  background-color: $blue-color;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,31 @@
+.city-list {
+  @include reset-list();
+  padding: 40px 20px;
+}
+
+.city-list__item {
+  padding-left: 50px;
+}
+
+.city-list__title {
+  @include heading();
+  margin: 0;
+}
+
+.city-list__description {
+  @include description();
+  color: $grey-color;
+}
+
+@media (min-width: $tablet-width) {
+  .city-list {
+    display: flex;
+  }
+
+  .city-list__item {
+    padding: 0;
+    text-align: center;
+    min-height: 330px;
+    width: 33.333333%;
+  }
+}

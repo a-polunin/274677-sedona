@@ -1,0 +1,33 @@
+.video {
+  position: relative;
+  padding-bottom: 35px;
+  margin: 0 auto;
+}
+
+.video__wrapper {
+  padding: 35px 20px 40px;
+  text-align: center;
+}
+
+.video__title {
+  @include heading();
+  margin: 0;
+}
+
+.video__description {
+  @include description();
+  color: $grey-color;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 800px;
+  }
+}

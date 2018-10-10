@@ -1,25 +1,29 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "fonts.scss";
+@import "normalize.scss";
+@import "general.scss";
+
+/* layout */
+@import "./layout/contacts.scss";
+@import "./layout/developed-by.scss";
+@import "./layout/main-nav.scss";
+@import "./layout/page-footer.scss";
+@import "./layout/page-header.scss";
+@import "./layout/page-main.scss";
 
 /* index */
-@import "main-nav.scss";
-@import "page-header.scss";
-@import "page-main.scss";
-@import "reasons-list.scss";
-@import "reason.scss";
-@import "city-list.scss";
-@import "find-hotel.scss";
-@import "page-footer.scss";
-@import "contacts.scss";
-@import "developed-by.scss";
+@import "./index/reasons-list.scss";
+@import "./index/reason.scss";
+@import "./index/city-list.scss";
+@import "./index/find-hotel.scss";
 
 /* photo */
-@import "photo.scss";
-@import "photo-item.scss";
-@import "video.scss";
-@import "video-controls.scss";
+@import "./photo/photo.scss";
+@import "./photo/photo-card.scss";
+@import "./photo/video.scss";
+@import "./photo/video-controls.scss";
 
 /* form */
-@import "feedback-form.scss";
-@import "form-item.scss";
+@import "./form/feedback-form.scss";
+@import "./form/form-item.scss";

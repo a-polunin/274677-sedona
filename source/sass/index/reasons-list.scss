@@ -1,0 +1,26 @@
+.reasons-list {
+  @include reset-list();
+  display: flex;
+  flex-direction: column;
+}
+
+.reasons-list__item {
+  order: 3;
+}
+
+.reasons-list__item:first-child {
+  order: 1;
+}
+
+.reasons-list__item--full-width {
+  order: 2;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .reasons-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

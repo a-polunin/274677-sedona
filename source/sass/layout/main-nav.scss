@@ -14,7 +14,7 @@
 .main-nav__item a{
   @include heading();
   display: block;
-  padding: 10px 0;
+  padding: 7px 0;
   line-height: 40px;
   color: #ffffff;
   text-decoration: none;
@@ -35,16 +35,41 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    min-height: 55px;
+  .main-nav{
+    padding-left: 49px;
+    padding-right: 26px;
   }
-
   .main-nav__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .main-nav__item {
     background-color: transparent;
+    &--photo{
+      margin-left: 26px;
+    }
+    &--form{
+      margin-left: 160px;
+    }
+  }
+
+  .main-nav__btn-close{
+    display: none;
+  }
+
+  .main-nav__item a{
+    color: #000000;
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .main-nav__item--mock{
+    width: 190px;
   }
 }

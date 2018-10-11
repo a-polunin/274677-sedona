@@ -1,6 +1,6 @@
 .page-footer {
   background-color: #fefefe;
-  padding: 30px 20px 25px;
+  padding: 34px 20px 25px;
   margin: 0 auto;
   text-align: center;
 }
@@ -9,22 +9,23 @@
   @include heading();
   font-size: 21px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
-    justify-content: space-between;
     padding: 36px 60px;
     align-items: center;
   }
 
   .page-footer__title {
     margin: 0;
+    margin-right: 112px;
   }
 
   .page-footer__contacts {
     margin: 0;
+    margin-right: 120px;
   }
 }

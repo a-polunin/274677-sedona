@@ -1,12 +1,23 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  padding-bottom: 37px;
+  &--photo{
+    padding-bottom: 19px;
+  }
+  &--form{
+    padding-bottom: 16px;
+  }
 }
 
 .page-header__main-picture {
   position: relative;
-  top: -20px;
+  top: -28px;
   z-index: 1;
+}
+
+.page-header__main-picture--full-size {
+  height: 362px;
 }
 
 .page-header__main-picture--min-size {
@@ -20,7 +31,7 @@
   display: block;
   width: 23px;
   height: 22px;
-  margin-top: 20px;
+  margin-top: 16px;
   padding: 0;
   background: transparent url('../../img/icon-menu.svg') no-repeat;
   border: none;
@@ -30,7 +41,7 @@
   @include heading();
   margin: 0;
   padding: 0 10px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .page-header__description {
@@ -40,13 +51,20 @@
   text-transform: uppercase;
   margin: 0;
 
+  &--photo{
+    padding: 0 5px;
+  }
+
+  &--form{
+    line-height: 24px;
+  }
   br {
     display: none;
   }
 }
 
 .page-header__wrapper {
-  padding: 42px 20px 0;
+  padding: 38px 20px 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -63,8 +81,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header{
+    padding-bottom: 50px;
+    &--photo{
+      padding-bottom: 67px;
+    }
+  }
   .page-header__wrapper {
-    padding: 42px 60px 0;
+    padding: 51px 60px 0;
   }
 
   .page-header__toggle {
@@ -73,13 +97,51 @@
 
   .page-header__title {
     padding: 0 100px;
+    font-size: 21px;
+    margin-bottom: 29px;
+    &--photo{
+      font-size: 30px;
+      margin-top: 23px;
+    }
+    &--form{
+      font-size: 30px;
+      margin-top: 23px;
+    }
   }
 
   .page-header__main-picture {
     margin-top: 0;
+    top: 0;
+    &--full-size{
+      height: 516px;
+    }
+    &--min-size{
+      height: 290px;
+    }
   }
 
   .page-header__description br {
     display: inline;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__container {
+    padding: 0;
+    position: absolute;
+    left: 332px;
+  }
+
+  .page-header__logo {
+    margin: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header__container {
+    left: 482px;
   }
 }

@@ -1,14 +1,14 @@
 .city-list {
   @include reset-list();
-  padding: 40px 20px;
+  padding: 35px 20px;
 }
 
 .city-list__item {
   position: relative;
   text-transform: uppercase;
-  padding-right: 30px;
+  padding-right: 20px;
   padding-left: 50px;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 
   &:last-child {
     margin-bottom: 0;
@@ -17,8 +17,8 @@
   &--house:before {
     content: "";
     position: absolute;
-    top: -5px;
-    left: -2px;
+    top: -8px;
+    left: 0;
     width: 39px;
     height: 37px;
     background-image: url(../../img/icon-house.svg);
@@ -29,7 +29,7 @@
     content: "";
     position: absolute;
     top: -10px;
-    left: -2px;
+    left: 3px;
     width: 32px;
     height: 38px;
     background-image: url(../../img/icon-gift.svg);
@@ -51,7 +51,7 @@
 .city-list__title {
   @include heading();
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .city-list__description {
@@ -67,14 +67,20 @@
     padding-top: 57px;
   }
 
+  .city-list__title{
+    font-size: 21px;
+    margin-bottom: 23px;
+  }
+
   .city-list__item {
     margin: 0;
-    padding: 100px 50px 64px;
+    padding: 100px 50px 60px;
     text-align: center;
     width: 33.333333%;
     order: 1;
 
     &:before {
+      top: 0;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -90,6 +96,7 @@
     order: 2;
 
     &:before {
+      top: 6px;
       width: 77px;
       height: 68px;
       background-size: 77px 68px;
@@ -97,7 +104,7 @@
   }
 
   .city-list__item--souvenirs {
-    padding: 100px 45px 64px;
+    padding: 100px 45px 60px;
     order: 3;
 
     &:before {

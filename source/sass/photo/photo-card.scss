@@ -1,6 +1,6 @@
 .photo-card {
   border-top: 2px solid #e5e5e5;
-  padding: 22px 20px;
+  padding: 22px 20px 16px;
 
   &:last-child {
     border-bottom: 2px solid #e5e5e5;
@@ -10,14 +10,13 @@
 .photo-card__title {
   @include photo-title();
   margin: 0;
-  margin-top: 18px;
-  margin-bottom: 8px;
+  margin-top: 15px;
 }
 
 .photo-card__author {
   @include photo-author();
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 }
 
 .photo-card__likes {
@@ -52,7 +51,16 @@
     justify-content: space-between;
     align-items: center;
     background-color: #f2f2f2;
-    padding: 0 20px;
+    padding: 0 20px 8px;
+  }
+
+  .photo-card__likes{
+    align-self: flex-start;
+    margin-top: 29px;
+    padding-left: 33px;
+    &::before{
+      top: 0;
+    }
   }
 }
 
@@ -63,5 +71,10 @@
     left: 0;
     color: #ffffff;
     width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+
+  .photo-card__author{
+    color: #ffffff;
   }
 }

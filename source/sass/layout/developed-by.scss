@@ -10,8 +10,14 @@
 }
 
 @media (min-width: $tablet-width){
-  .developed-bt{
+  .developed-by{
     align-self: flex-start;
     margin-top: 4px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .developed-by{
+    margin-top: -13px;
   }
 }

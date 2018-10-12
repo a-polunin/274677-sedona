@@ -10,8 +10,7 @@
   }
 
   &--contacts {
-    padding: 18px 0 7px;
-    padding-bottom: 7px;
+    padding: 18px 20px 7px;
   }
 
   &--radio {
@@ -82,7 +81,7 @@
     border: none;
 
     &--contacts {
-      padding-bottom: 13px;
+      margin-bottom: 13px;
     }
 
     &--description {
@@ -109,12 +108,61 @@
     margin-bottom: 57px;
 
     &--contacts {
+      display: flex;
+      align-items: center;
       margin-bottom: 23px;
+
+      &::after,
+      &::before {
+        content: "";
+
+        flex-grow: 1;
+        flex-shrink: 0;
+
+        width: 50px;
+        height: 1px;
+
+        background: #dbdbdb;
+      }
     }
 
     &--attraction {
-      padding: 0 100px;
+      display: flex;
+      align-items: center;
       margin-bottom: 44px;
+
+      &::after,
+      &::before {
+        content: "";
+
+        flex-grow: 1;
+        flex-shrink: 0;
+
+        width: 50px;
+        height: 1px;
+
+        background: #dbdbdb;
+      }
+    }
+  }
+
+  .form-item__title--contacts {
+    &::before {
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-left: 60px;
+    }
+  }
+
+  .form-item__title--attraction {
+    &::before {
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-left: 60px;
     }
   }
 
@@ -139,25 +187,33 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-item--attraction{
+  .form-item {
+    border: none;
+
+    &--contacts {
+      margin-bottom: 21px;
+    }
+
+    &--description {
+      padding: 42px 0;
+    }
+  }
+
+  .form-item--attraction {
     padding: 0;
   }
+
   .form-item__title {
     &--radio {
       margin-left: 78px;
-    }
-
-    &--fullname {
-      margin-left: 22px;
     }
 
     &--contacts {
       margin-bottom: 73px;
     }
 
-    &--attraction{
-      padding: 0 300px;
-      margin-bottom: 40px;
+    &--attraction {
+      margin-bottom: 42px;
     }
   }
 
@@ -169,12 +225,17 @@
 
   .form-item__item {
     width: auto;
+
     &--tel {
       width: 42%;
     }
 
     &--email {
       width: 50%;
+    }
+
+    &--half-width {
+      margin-right: 0;
     }
   }
 

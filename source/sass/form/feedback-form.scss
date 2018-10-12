@@ -145,7 +145,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback-form {
-    padding: 0 120px 39px;
+    padding: 0 120px 68px;
   }
 
   .feedback-form__fieldset:nth-child(3) {
@@ -173,5 +173,13 @@
       margin-bottom: 0;
       margin-right: 17px;
     }
+  }
+
+  .feedback-form__submit {
+    margin-top: 12px;
+  }
+
+  .feedback-form__hint {
+    margin-top: 33px;
   }
 }

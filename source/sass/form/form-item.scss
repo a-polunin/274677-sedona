@@ -80,11 +80,13 @@
 @media (min-width: $tablet-width) {
   .form-item {
     border: none;
-    &--contacts{
+
+    &--contacts {
       padding-bottom: 13px;
     }
-    &--description{
-      padding:  50px 0;
+
+    &--description {
+      padding: 50px 0;
     }
   }
 
@@ -110,7 +112,7 @@
       margin-bottom: 23px;
     }
 
-    &--attraction{
+    &--attraction {
       padding: 0 100px;
       margin-bottom: 44px;
     }
@@ -137,6 +139,28 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-item--attraction{
+    padding: 0;
+  }
+  .form-item__title {
+    &--radio {
+      margin-left: 78px;
+    }
+
+    &--fullname {
+      margin-left: 22px;
+    }
+
+    &--contacts {
+      margin-bottom: 73px;
+    }
+
+    &--attraction{
+      padding: 0 300px;
+      margin-bottom: 40px;
+    }
+  }
+
   .form-item__container {
     display: flex;
     width: 100%;
@@ -145,10 +169,18 @@
 
   .form-item__item {
     width: auto;
+    &--tel {
+      width: 42%;
+    }
+
+    &--email {
+      width: 50%;
+    }
   }
 
   .form-item__item--contact {
     flex-direction: row;
+    align-items: center;
 
     &::after {
       top: 0;

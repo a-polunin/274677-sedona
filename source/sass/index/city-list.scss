@@ -14,36 +14,36 @@
     margin-bottom: 0;
   }
 
-  &--house:before {
+  &--house::before {
     content: "";
     position: absolute;
     top: -8px;
     left: 0;
     width: 39px;
     height: 37px;
-    background-image: url(../../img/icon-house.svg);
+    background-image: url("../../img/icon-house.svg");
     background-size: 39px 37px;
   }
 
-  &--souvenirs:before {
+  &--souvenirs::before {
     content: "";
     position: absolute;
     top: -10px;
     left: 3px;
     width: 32px;
     height: 38px;
-    background-image: url(../../img/icon-gift.svg);
+    background-image: url("../../img/icon-gift.svg");
     background-size: 32px 38px;
   }
 
-  &--food:before {
+  &--food::before {
     content: "";
     position: absolute;
     top: -5px;
     left: -2px;
     width: 39px;
     height: 35px;
-    background-image: url(../../img/icon-burger.svg);
+    background-image: url("../../img/icon-burger.svg");
     background-size: 39px 35px;
   }
 }
@@ -79,13 +79,13 @@
     width: 33.333333%;
     order: 1;
 
-    &:before {
+    &::before {
       top: 0;
       left: 50%;
       transform: translateX(-50%);
     }
 
-    &--house:before {
+    &--house::before {
       width: 75px;
       height: 72px;
       background-size: 75px 72px;
@@ -95,7 +95,7 @@
   .city-list__item--food {
     order: 2;
 
-    &:before {
+    &::before {
       top: 6px;
       width: 77px;
       height: 68px;
@@ -107,7 +107,7 @@
     padding: 100px 45px 60px;
     order: 3;
 
-    &:before {
+    &::before {
       width: 64px;
       height: 75px;
       background-size: 64px 75px;

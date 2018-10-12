@@ -19,7 +19,7 @@
     margin-right: 0;
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -27,22 +27,22 @@
     transform: translate(-50%, -50%);
   }
 
-  &--tw:after {
+  &--tw::after {
     width: 18px;
     height: 14px;
-    background-image: url('../../img/icon-twitter.svg');
+    background-image: url("../../img/icon-twitter.svg");
   }
 
-  &--fb:after {
+  &--fb::after {
     width: 9px;
     height: 18px;
-    background-image: url('../../img/icon-facebook.svg');
+    background-image: url("../../img/icon-facebook.svg");
   }
 
-  &--yt:after {
+  &--yt::after {
     width: 20px;
     height: 14px;
-    background-image: url('../../img/icon-youtube.svg');
+    background-image: url("../../img/icon-youtube.svg");
   }
 }
 

@@ -30,13 +30,15 @@
   }
 }
 
-@media (min-width: $desktop-width){
-  .page-footer{
+@media (min-width: $desktop-width) {
+  .page-footer {
     padding: 36px 120px;
   }
+
   .page-footer__title {
     margin-right: 269px;
   }
+
   .page-footer__contacts {
     margin-right: 275px;
   }

@@ -24,14 +24,14 @@
   position: relative;
   padding-left: 37px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: -5px;
     left: 0;
     width: 22px;
     height: 21px;
-    background-image: url('../../img/icon-like.svg');
+    background-image: url("../../img/icon-like.svg");
   }
 }
 
@@ -41,7 +41,8 @@
     padding: 0;
     border: 0;
     margin: 0;
-    &:last-child{
+
+    &:last-child {
       border: none;
     }
   }
@@ -54,11 +55,12 @@
     padding: 0 20px 8px;
   }
 
-  .photo-card__likes{
+  .photo-card__likes {
     align-self: flex-start;
     margin-top: 29px;
     padding-left: 33px;
-    &::before{
+
+    &::before {
       top: 0;
     }
   }
@@ -74,13 +76,14 @@
     background-color: rgba($color: #000000, $alpha: 0.5);
   }
 
-  .photo-card__author{
+  .photo-card__author {
     color: #ffffff;
   }
 
-  .photo-card__likes{
+  .photo-card__likes {
     padding-right: 13px;
-    &--big-padding{
+
+    &--big-padding {
       padding-left: 30px;
       padding-right: 2px;
     }

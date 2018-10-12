@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.main-nav__item a{
+.main-nav__item a {
   @include heading();
   display: block;
   padding: 7px 0;
@@ -23,22 +23,23 @@
   border-bottom: 1px solid #9ac2db;
 }
 
-.main-nav__btn-close{
+.main-nav__btn-close {
   position: absolute;
   top: 17px;
   right: 20px;
   width: 23px;
   height: 22px;
-  background: url('../../img/icon-cross.svg') no-repeat center;
+  background: url("../../img/icon-cross.svg") no-repeat center;
   border: 0;
   cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav{
+  .main-nav {
     padding-left: 49px;
     padding-right: 26px;
   }
+
   .main-nav__list {
     display: flex;
     justify-content: space-between;
@@ -46,19 +47,21 @@
 
   .main-nav__item {
     background-color: transparent;
-    &--photo{
+
+    &--photo {
       margin-left: 26px;
     }
-    &--form{
+
+    &--form {
       margin-left: 160px;
     }
   }
 
-  .main-nav__btn-close{
+  .main-nav__btn-close {
     display: none;
   }
 
-  .main-nav__item a{
+  .main-nav__item a {
     color: #000000;
     background-color: transparent;
     border: 0;
@@ -68,17 +71,18 @@
   }
 }
 
-@media (min-width: $desktop-width){
-  .main-nav{
+@media (min-width: $desktop-width) {
+  .main-nav {
     padding-left: 91px;
     padding-right: 70px;
   }
 
   .main-nav__item {
-    &--photo{
+    &--photo {
       margin-left: 21px;
     }
-    &--form{
+
+    &--form {
       margin-left: 242px;
     }
   }

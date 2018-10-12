@@ -141,7 +141,29 @@
 
 
 @media (min-width: $desktop-width) {
+  .page-header{
+    &--photo{
+      padding-bottom: 69px;
+    }
+  }
+
   .page-header__container {
-    left: 482px;
+    left: 505px;
+  }
+
+  .page-header__main-picture {
+    &--min-size{
+      height: 300px;
+    }
+  }
+
+  .page-header__title {
+    &--photo{
+      margin-top: 61px;
+    }
+/*     &--form{
+      font-size: 30px;
+      margin-top: 23px;
+    } */
   }
 }

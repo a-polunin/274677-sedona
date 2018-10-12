@@ -69,7 +69,17 @@
 }
 
 @media (min-width: $desktop-width){
-  .main-nav__item--mock{
-    width: 190px;
+  .main-nav{
+    padding-left: 91px;
+    padding-right: 70px;
+  }
+
+  .main-nav__item {
+    &--photo{
+      margin-left: 21px;
+    }
+    &--form{
+      margin-left: 242px;
+    }
   }
 }

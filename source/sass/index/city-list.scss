@@ -67,7 +67,7 @@
     padding-top: 57px;
   }
 
-  .city-list__title{
+  .city-list__title {
     font-size: 21px;
     margin-bottom: 23px;
   }
@@ -112,5 +112,11 @@
       height: 75px;
       background-size: 64px 75px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .city-list__item {
+    padding-bottom: 82px;
   }
 }

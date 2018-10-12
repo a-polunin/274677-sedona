@@ -46,5 +46,10 @@
 @media (min-width: $desktop-width) {
   .video {
     width: 800px;
+    padding: 0;
+    margin-bottom: 83px;
+  }
+  .video__wrapper{
+    padding-top: 70px;
   }
 }

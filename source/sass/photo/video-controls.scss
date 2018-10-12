@@ -116,6 +116,10 @@
 
 @media (min-width: $desktop-width) {
   .video-controls {
-    width: 680px;
+    width: 800px;
+  }
+
+  .video-controls__timeline {
+    width: 540px;
   }
 }

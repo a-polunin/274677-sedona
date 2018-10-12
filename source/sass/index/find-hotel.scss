@@ -57,3 +57,13 @@
     display: inline;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .find-hotel {
+    padding: 55px 0 67px;
+  }
+
+  .find-hotel__description {
+    margin-bottom: 45px;
+  }
+}

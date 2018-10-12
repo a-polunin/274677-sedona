@@ -77,4 +77,12 @@
   .photo-card__author{
     color: #ffffff;
   }
+
+  .photo-card__likes{
+    padding-right: 13px;
+    &--big-padding{
+      padding-left: 30px;
+      padding-right: 2px;
+    }
+  }
 }

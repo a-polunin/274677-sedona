@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.main-nav__item a {
+.main-nav__link {
   @include heading();
   display: block;
   padding: 7px 0;
@@ -32,6 +32,21 @@
   background: url("../../img/icon-cross.svg") no-repeat center;
   border: 0;
   cursor: pointer;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__link {
+
+    &:hover,
+    &:focus {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      color:rgba($color: #ffffff, $alpha: 0.3);
+      background-color: #5496bd;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -61,13 +76,35 @@
     display: none;
   }
 
-  .main-nav__item a {
+  .main-nav__link {
     color: #000000;
     background-color: transparent;
     border: 0;
     font-size: 14px;
     line-height: 26px;
     padding: 15px 0;
+
+    &:hover,
+    &:focus {
+      color: #0c1920;
+    }
+
+    &:active {
+      color: rgba($color: #000000, $alpha: 0.3);
+    }
+
+    &--active {
+      color: #766357;
+
+      &:hover,
+      &:focus {
+        color: #604e43;
+      }
+
+      &:active {
+        color: rgba($color: #766357, $alpha: 0.3);
+      }
+    }
   }
 }
 

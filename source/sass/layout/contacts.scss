@@ -44,7 +44,21 @@
     height: 14px;
     background-image: url("../../img/icon-youtube.svg");
   }
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
+
 
 .contacts__link {
   display: inline-block;

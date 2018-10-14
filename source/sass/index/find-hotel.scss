@@ -35,6 +35,26 @@
   font-size: 21px;
   text-decoration: none;
   background-color: $blue-color;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &--disabled {
+    cursor: auto;
+    background-color: #e5e5e5;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #e5e5e5;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

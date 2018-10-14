@@ -36,14 +36,13 @@
 
 @media (max-width: $mobile-width-only) {
   .main-nav__link {
-
     &:hover,
     &:focus {
       background-color: #669ec0;
     }
 
     &:active {
-      color:rgba($color: #ffffff, $alpha: 0.3);
+      color: rgba($color: #ffffff, $alpha: 0.3);
       background-color: #5496bd;
     }
   }

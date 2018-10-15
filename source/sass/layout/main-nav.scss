@@ -1,5 +1,6 @@
 .main-nav {
   @include heading();
+  position: relative;
   color: #252424;
 }
 
@@ -23,15 +24,36 @@
   border-bottom: 1px solid #9ac2db;
 }
 
-.main-nav__btn-close {
+.main-nav__toggle {
   position: absolute;
-  top: 17px;
   right: 20px;
+  display: block;
   width: 23px;
   height: 22px;
-  background: url("../../img/icon-cross.svg") no-repeat center;
-  border: 0;
+  border: none;
   cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle {
+  bottom: -38px;
+  background: transparent url("../../img/icon-menu.svg") no-repeat;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 16px;
+  background: transparent url("../../img/icon-cross.svg") no-repeat;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+}
+
+.main-nav--closed ~ .page-header__logo {
+  top: -1px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -54,7 +76,7 @@
     padding-right: 26px;
   }
 
-  .main-nav__list {
+  .main-nav--opened .main-nav__list {
     display: flex;
     justify-content: space-between;
   }
@@ -71,7 +93,7 @@
     }
   }
 
-  .main-nav__btn-close {
+  .main-nav__toggle {
     display: none;
   }
 

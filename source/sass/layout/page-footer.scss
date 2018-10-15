@@ -32,6 +32,8 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
+    max-width: $desktop-width;
+    margin: 0 auto;
     padding: 36px 120px;
   }
 

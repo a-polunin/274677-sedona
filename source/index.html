@@ -11,7 +11,7 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav show-on">
+    <nav class="main-nav main-nav--opened">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
@@ -26,28 +26,28 @@
           <a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a>
         </li>
       </ul>
-      <button class="main-nav__btn-close"><span class="visually-hidden">Закрыть меню</span></button>
+      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
-    <div class="page-header__container">
-      <a href="#" class="page-header__logo">
-        <img src="./img/logo-sedona-mobile.svg" alt="Sedona" class="page-header__logo-img">
-      </a>
-      <button type="button" class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
+    <a href="#" class="page-header__logo">
+      <img src="./img/logo-sedona-mobile.svg" alt="Sedona" class="page-header__logo-img">
+    </a>
+    <div class="page-header__main-picture-container page-header__main-picture-container--fullsize">
+      <img src="./img/text-sedona-index.svg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--full-size">
+      <span class="visually-hidden">Добро пожаловать в седону</span>
     </div>
-    <img src="./img/bg-back-tablet@1x.jpg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--full-size">
+
     <div class="page-header__wrapper">
       <h1 class="page-header__title">Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
       <p class="page-header__description">Рассмотрим 5 причин, по которым седона круче, чем гранд Каньон!</p>
     </div>
-
   </header>
 
   <main class="page-main">
     <div class="reasons">
       <ul class="reasons-list">
-        <li class="reasons-list__item reason reason--blue">
+        <li class="reasons-list__item reason reason--blue reason--white-mask">
           <div class="reason__wrapper">
-            <h2 class="reason__title reason__title--white">Настоящий<br>городок</h2>
+            <h2 class="reason__title reason__title--white">Настоящий<br> городок</h2>
             <b class="reason__number">&mdash; №1 &mdash;</b>
             <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>

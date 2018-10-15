@@ -10,7 +10,7 @@
 
 <body>
   <header class="page-header page-header--form">
-    <nav class="main-nav show-on">
+    <nav class="main-nav main-nav--opened">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -25,15 +25,16 @@
           <a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a>
         </li>
       </ul>
-      <button class="main-nav__btn-close"><span class="visually-hidden">Закрыть меню</span></button>
+      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
-    <div class="page-header__container">
-      <a href="#" class="page-header__logo">
-        <img src="./img/logo-sedona-mobile.svg" alt="Sedona" class="page-header__logo-img">
-      </a>
-      <button type="button" class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
+    <a href="#" class="page-header__logo">
+      <img src="./img/logo-sedona-mobile.svg" alt="Sedona" class="page-header__logo-img">
+    </a>
+    <div class="page-header__main-picture-container page-header__main-picture-container--minsize">
+      <img src="./img/text-sedona.svg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--min-size">
+      <span class="visually-hidden">Добро пожаловать в седону</span>
     </div>
-    <img src="./img/bg-back-mobile@1x.jpg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--min-size">
+
     <div class="page-header__wrapper">
       <h1 class="page-header__title page-header__title--form">Оставьте свой отзыв</h1>
       <p class="page-header__description page-header__description--form">Помогите нашим отелям стать лучше! Оставьте
@@ -81,15 +82,18 @@
         <div class="form-item__item form-item__item--radio">
           <input type="radio" class="feedback-form__radio visually-hidden" id="radio-positive" name="radio-impression"
             checked>
-          <label for="radio-positive" class="feedback-form__label feedback-form__label--radio feedback-form__label--bold">Скорее положительное</label>
+          <label for="radio-positive" class="feedback-form__label feedback-form__label--radio feedback-form__label--bold">Скорее
+            положительное</label>
         </div>
         <div class="form-item__item form-item__item--radio">
           <input type="radio" class="feedback-form__radio visually-hidden" id="radio-negative" name="radio-impression">
-          <label for="radio-negative" class="feedback-form__label feedback-form__label--radio  feedback-form__label--bold">Скорее отрицательное</label>
+          <label for="radio-negative" class="feedback-form__label feedback-form__label--radio  feedback-form__label--bold">Скорее
+            отрицательное</label>
         </div>
         <div class="form-item__item form-item__item--radio">
           <input type="radio" class="feedback-form__radio visually-hidden" id="radio-idk" name="radio-impression">
-          <label for="radio-idk" class="feedback-form__label feedback-form__label--radio  feedback-form__label--bold">Затрудняюсь ответить</label>
+          <label for="radio-idk" class="feedback-form__label feedback-form__label--radio  feedback-form__label--bold">Затрудняюсь
+            ответить</label>
         </div>
       </fieldset>
       <fieldset class="feedback-form__fieldset form-item form-item--attraction">

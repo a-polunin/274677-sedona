@@ -1,5 +1,6 @@
 .main-nav {
   @include heading();
+  position: relative;
   color: #252424;
 }
 
@@ -8,20 +9,139 @@
 }
 
 .main-nav__item {
+  text-align: center;
+}
+
+.main-nav__link {
+  @include heading();
+  display: block;
+  padding: 7px 0;
+  line-height: 40px;
+  color: #ffffff;
+  text-decoration: none;
   background-color: $blue-color;
+  border-top: 1px solid #678fa8;
+  border-bottom: 1px solid #9ac2db;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  display: block;
+  width: 23px;
+  height: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle {
+  bottom: -38px;
+  background: transparent url("../../img/icon-menu.svg") no-repeat;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 16px;
+  background: transparent url("../../img/icon-cross.svg") no-repeat;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+}
+
+.main-nav--closed ~ .page-header__logo {
+  top: -1px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__link {
+    &:hover,
+    &:focus {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      color: rgba($color: #ffffff, $alpha: 0.3);
+      background-color: #5496bd;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    min-height: 55px;
+    padding-left: 49px;
+    padding-right: 26px;
   }
 
-  .main-nav__list {
+  .main-nav--opened .main-nav__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .main-nav__item {
     background-color: transparent;
+
+    &--photo {
+      margin-left: 26px;
+    }
+
+    &--form {
+      margin-left: 160px;
+    }
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__link {
+    color: #000000;
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 15px 0;
+
+    &:hover,
+    &:focus {
+      color: #0c1920;
+    }
+
+    &:active {
+      color: rgba($color: #000000, $alpha: 0.3);
+    }
+
+    &--active {
+      color: #766357;
+
+      &:hover,
+      &:focus {
+        color: #604e43;
+      }
+
+      &:active {
+        color: rgba($color: #766357, $alpha: 0.3);
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding-left: 91px;
+    padding-right: 70px;
+  }
+
+  .main-nav__item {
+    &--photo {
+      margin-left: 21px;
+    }
+
+    &--form {
+      margin-left: 242px;
+    }
   }
 }

@@ -8,20 +8,54 @@
   background-color: $blue-color;
 
   .reason__wrapper {
-    padding: 40px 20px;
+    padding: 41px 20px 39px;
+  }
+}
+
+.reason--white-mask {
+  padding-top: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 15px solid #ffffff;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
   }
 }
 
 .reason__wrapper {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   text-align: center;
-  padding: 30px 20px;
+  padding: 27px 19px;
+
+  &--with-border::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -1px;
+    left: 20px;
+    height: 1px;
+    background: #d6d6d6;
+  }
+
+  br {
+    display: none;
+  }
 }
 
 .reason__title {
   @include heading();
   margin: 0;
+  margin-bottom: 9px;
+
+  br {
+    display: none;
+  }
 }
 
 .reason__title--white {
@@ -34,11 +68,14 @@
 
 .reason__number {
   @include description();
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .reason__description {
   @include description();
   margin: 0;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -50,10 +87,86 @@
       width: 100%;
     }
 
-    min-height: 255px;
+    &--reverse {
+      flex-direction: row-reverse;
+    }
   }
 
-  .reason--reverse {
-    flex-direction: row-reverse;
+  .reason--blue .reason__wrapper {
+    padding: 45px 15px 39px;
+  }
+
+  .reason__wrapper {
+    padding: 45px 19px;
+  }
+
+  .reason--white-mask {
+    padding-top: 0;
+
+    &::before {
+      content: "";
+      border: none;
+    }
+  }
+
+  .reason__title {
+    padding: 0;
+    font-size: 21px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .reason__number {
+    margin-bottom: 22px;
+  }
+
+  .reason__description {
+    padding: 0 30px;
+  }
+
+  .reason__wrapper--with-border::after {
+    content: "";
+    display: none;
+  }
+
+  .reason__img--city,
+  .reason__img--bridge {
+    width: 512px;
+    height: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason--blue .reason__wrapper {
+    padding: 52px 15px 39px;
+    min-width: 400px;
+
+    br {
+      display: inline;
+    }
+  }
+
+  .reason__wrapper {
+    padding-bottom: 63px;
+  }
+
+  .reason__img--city {
+    height: 256px;
+    flex-grow: 1;
+  }
+
+  .reason__img--bridge {
+    height: 256px;
+    flex-grow: 1;
+  }
+
+  .reason__description {
+    padding: 0;
+  }
+
+  .reason__title {
+    margin-bottom: 9px;
   }
 }

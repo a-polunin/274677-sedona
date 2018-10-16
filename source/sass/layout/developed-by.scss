@@ -2,3 +2,22 @@
   @include description();
   text-transform: uppercase;
 }
+
+.developed-by__img {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: -10px;
+}
+
+@media (min-width: $tablet-width) {
+  .developed-by {
+    align-self: flex-start;
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developed-by {
+    margin-top: 2px;
+  }
+}

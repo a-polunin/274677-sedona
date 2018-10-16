@@ -1,3 +1,6 @@
-.page-main {
-  margin-top: 30px;
+@media (min-width: $desktop-width) {
+  .page-main {
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
 }

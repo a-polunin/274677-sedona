@@ -8,15 +8,17 @@
 @import "./layout/contacts.scss";
 @import "./layout/developed-by.scss";
 @import "./layout/main-nav.scss";
-@import "./layout/page-main.scss";
+/* @import "./layout/page-main.scss"; */
 @import "./layout/page-footer.scss";
 @import "./layout/page-header.scss";
+@import "./layout/desktop-container.scss";
 
 /* index */
 @import "./index/reasons-list.scss";
 @import "./index/reason.scss";
 @import "./index/city-list.scss";
 @import "./index/find-hotel.scss";
+@import "./index/map.scss";
 
 /* photo */
 @import "./photo/photo.scss";

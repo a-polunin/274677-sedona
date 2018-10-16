@@ -58,6 +58,10 @@
   @include description();
   color: $grey-color;
   margin: 0;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -118,5 +122,9 @@
 @media (min-width: $desktop-width) {
   .city-list__item {
     padding-bottom: 82px;
+  }
+
+  .city-list__description br {
+    display: inline;
   }
 }

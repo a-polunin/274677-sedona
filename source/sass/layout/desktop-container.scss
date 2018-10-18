@@ -1,5 +1,6 @@
 .desktop-container {
   background-color: #ffffff;
+  overflow: hidden; /* IE horizontal scrollbar fix */
 }
 
 @media (min-width: $desktop-width) {

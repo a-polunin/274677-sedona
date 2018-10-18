@@ -98,8 +98,7 @@
 
   .video-controls__repeat {
     order: 1;
-    margin-right: 40px;
-    margin-top: 0;
+    margin: 0 48px 0 -8px;
 
     path {
       fill: #ffffff;
@@ -109,7 +108,7 @@
   .video-controls__timeline {
     width: 388px;
     order: 2;
-    margin-top: 0;
+    margin-top: 4px;
     margin-right: 42px;
   }
 

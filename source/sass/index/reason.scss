@@ -18,11 +18,14 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -23px;
     left: 0;
-    border-top: 15px solid #ffffff;
+    width: 100%;
+    height: 37px;
+    background: url("../../img/bg-triangle.svg");
+    /* border-top: 15px solid #ffffff;
     border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
+    border-right: 160px solid transparent; */
   }
 }
 
@@ -31,7 +34,7 @@
   width: 320px;
   margin: 0 auto;
   text-align: center;
-  padding: 27px 19px;
+  padding: 27px 31px;
 
   &--with-border::after {
     content: "";
@@ -76,7 +79,12 @@
   @include description();
   margin: 0;
   text-transform: uppercase;
+
+  br {
+    display: none;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .reason {
@@ -93,6 +101,7 @@
   }
 
   .reason--blue .reason__wrapper {
+    width: 33.203125%;
     padding: 45px 15px 39px;
   }
 
@@ -122,25 +131,27 @@
     margin-bottom: 22px;
   }
 
+  .reason--blue .reason__description br {
+    display: none;
+  }
+
   .reason__description {
     padding: 0 30px;
+
+    br {
+      display: inline;
+    }
   }
 
   .reason__wrapper--with-border::after {
     content: "";
     display: none;
   }
-
-  .reason__img--city,
-  .reason__img--bridge {
-    width: 512px;
-    height: 256px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .reason--blue .reason__wrapper {
-    padding: 52px 15px 39px;
+    padding: 52px 60px 39px;
     min-width: 400px;
 
     br {
@@ -149,17 +160,7 @@
   }
 
   .reason__wrapper {
-    padding-bottom: 63px;
-  }
-
-  .reason__img--city {
-    height: 256px;
-    flex-grow: 1;
-  }
-
-  .reason__img--bridge {
-    height: 256px;
-    flex-grow: 1;
+    padding: 45px 18px 63px;
   }
 
   .reason__description {
@@ -168,5 +169,10 @@
 
   .reason__title {
     margin-bottom: 9px;
+  }
+
+  .reason__img {
+    width: 100%;
+    height: 256px;
   }
 }

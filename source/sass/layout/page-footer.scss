@@ -17,6 +17,10 @@
     display: flex;
     padding: 36px 60px;
     align-items: center;
+
+    &--index {
+      padding: 27px 60px;
+    }
   }
 
   .page-footer__title {
@@ -32,9 +36,11 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    max-width: $desktop-width;
-    margin: 0 auto;
     padding: 36px 120px;
+
+    &--index {
+      padding: 27px 120px;
+    }
   }
 
   .page-footer__title {

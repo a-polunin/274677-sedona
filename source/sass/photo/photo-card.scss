@@ -55,13 +55,25 @@
     padding: 0 20px 8px;
   }
 
+  .photo-card__title-author {
+    flex-grow: 1;
+  }
+
   .photo-card__likes {
     align-self: flex-start;
     margin-top: 29px;
-    padding-left: 33px;
+    padding-left: 31px;
 
     &::before {
       top: 0;
+    }
+
+    &--hundreds {
+      padding-right: 10px;
+    }
+
+    &--tens {
+      padding-right: 17px;
     }
   }
 }
@@ -81,11 +93,17 @@
   }
 
   .photo-card__likes {
-    padding-right: 13px;
-
-    &--big-padding {
+    &--thousands {
       padding-left: 30px;
       padding-right: 2px;
+    }
+
+    &--hundreds {
+      padding-right: 10px;
+    }
+
+    &--tens {
+      padding-right: 17px;
     }
   }
 }

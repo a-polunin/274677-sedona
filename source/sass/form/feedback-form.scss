@@ -42,6 +42,7 @@
   text-transform: unset;
   background-color: #f2f2f2;
   border: 4px solid transparent;
+  outline: none;
 
   &::placeholder {
     color: #000000;
@@ -51,12 +52,11 @@
     padding-right: 65px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
     background-color: #ffffff;
     border-color: #e5e5e5;
   }

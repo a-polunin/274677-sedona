@@ -58,12 +58,11 @@
 
 .video-controls__repeat-icon,
 .video-controls__subs-icon,
-.video-controls__fullscreen-icon{
+.video-controls__fullscreen-icon {
   fill: #5c6870;
 }
 
 @media (max-width: $mobile-width-only) {
-
   .video-controls__repeat-icon:hover,
   .video-controls__repeat-icon:focus,
   .video-controls__subs-icon:hover,

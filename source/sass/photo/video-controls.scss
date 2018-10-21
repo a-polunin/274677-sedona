@@ -56,24 +56,33 @@
   background-color: transparent;
 }
 
+.video-controls__repeat-icon,
+.video-controls__subs-icon,
+.video-controls__fullscreen-icon{
+  fill: #5c6870;
+}
+
 @media (max-width: $mobile-width-only) {
-  .video-controls__repeat:hover,
-  .video-controls__repeat:focus,
-  .video-controls__subs:hover,
-  .video-controls__subs:focus,
-  .video-controls__fullscreen:hover,
-  .video-controls__fullscreen:focus {
-    path {
+
+  .video-controls__repeat-icon:hover,
+  .video-controls__repeat-icon:focus,
+  .video-controls__subs-icon:hover,
+  .video-controls__subs-icon:focus,
+  .video-controls__fullscreen-icon:hover,
+  .video-controls__fullscreen-icon:focus {
+    /*     path {
       fill: #333333;
-    }
+    } */
+    fill: #333333;
   }
 
-  .video-controls__repeat:active,
-  .video-controls__subs:active,
-  .video-controls__fullscreen:active {
-    path {
+  .video-controls__repeat-icon:active,
+  .video-controls__subs-icon:active,
+  .video-controls__fullscreen-icon:active {
+    /*     path {
       opacity: 0.3;
-    }
+    } */
+    opacity: 0, 3;
   }
 }
 
@@ -100,9 +109,13 @@
     order: 1;
     margin: 0 48px 0 -8px;
 
-    path {
+    /*     path {
       fill: #ffffff;
-    }
+    } */
+  }
+
+  .video-controls__repeat-icon {
+    fill: #ffffff;
   }
 
   .video-controls__timeline {
@@ -117,37 +130,47 @@
     margin-top: 0;
     margin-right: 30px;
 
-    path {
+    /*     path {
       fill: #ffffff;
-    }
+    } */
+  }
+
+  .video-controls__subs-icon {
+    fill: #ffffff;
   }
 
   .video-controls__fullscreen {
     order: 4;
     margin-top: 0;
 
-    polygon {
+    /*     polygon {
       fill: #ffffff;
-    }
+    } */
   }
 
-  .video-controls__repeat:hover,
-  .video-controls__repeat:focus,
-  .video-controls__subs:hover,
-  .video-controls__subs:focus,
-  .video-controls__fullscreen:hover,
-  .video-controls__fullscreen:focus {
-    path {
+  .video-controls__fullscreen-icon {
+    fill: #ffffff;
+  }
+
+  .video-controls__repeat-icon:hover,
+  .video-controls__repeat-icon:focus,
+  .video-controls__subs-icon:hover,
+  .video-controls__subs-icon:focus,
+  .video-controls__fullscreen-icon:hover,
+  .video-controls__fullscreen-icon:focus {
+    /*     path {
       opacity: 0.6;
-    }
+    } */
+    opacity: 0.6;
   }
 
-  .video-controls__repeat:active,
-  .video-controls__subs:active,
-  .video-controls__fullscreen:active {
-    path {
+  .video-controls__repeat-icon:active,
+  .video-controls__subs-icon:active,
+  .video-controls__fullscreen-icon:active {
+    /*     path {
       opacity: 0.3;
-    }
+    } */
+    opacity: 0.3;
   }
 }
 

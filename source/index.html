@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <div class="desktop-container">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
@@ -57,7 +57,7 @@
               <b class="reason__number">&mdash; №1 &mdash;</b>
               <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <picture>
+            <picture class="reason__img-container">
               <source type="image/webp" media="(min-width: 1200px)" srcset="./img/main-city-desktop@1x.webp 1x, ./img/main-city-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.webp 1x, ./img/main-city-tablet@2x.webp 2x">
               <source type="image/webp" src="./img/main-city-mobile@1x.webp" srcset="./img/main-city-mobile@2x.webp 2x">
@@ -74,7 +74,7 @@
               <b class="reason__number">&mdash; №2 &mdash;</b>
               <p class="reason__description">Да, по нему можно пройти!<br>Если вы осмелитесь, конечно</p>
             </div>
-            <picture>
+            <picture class="reason__img-container">
               <source type="image/webp" media="(min-width:1200px)" srcset="./img/main-bridge-desktop@1x.webp 1x, ./img/main-bridge-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width:768px)" srcset="./img/main-bridge-tablet@1x.webp 1x, ./img/main-bridge-tablet@2x.webp 2x">
               <source type="image/webp" src="./img/main-bridge-mobile@1x.webp" srcset="./img/main-bridge-mobile@2x.webp 2x">

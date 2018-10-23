@@ -1,3 +1,18 @@
+.map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 158px;
+    left: 146px;
+    width: 27px;
+    height: 27px;
+    background-image: url("../../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 .map__img {
   margin: 0 auto;
   width: 100%;
@@ -7,5 +22,19 @@
 @media (min-width: $tablet-width) {
   .map {
     height: 360px;
+
+    &::before {
+      top: 166px;
+      left: 370px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    &::before {
+      top: 163px;
+      left: 586px;
+    }
   }
 }

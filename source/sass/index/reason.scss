@@ -179,8 +179,17 @@
     margin-bottom: 9px;
   }
 
-  .reason__img {
-    width: 100%;
+  .reason__img-container {
     height: 256px;
+    overflow: hidden;
+  }
+
+  .reason__img {
+    margin-top: -71px;
+    max-height: none;
+
+    &--bridge {
+      margin-top: -76px;
+    }
   }
 }

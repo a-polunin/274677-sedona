@@ -38,6 +38,7 @@
   @include heading;
   position: relative;
   width: 100%;
+  height: 56px; /* IE11 fix */
   padding: 11px 18px;
   text-transform: unset;
   background-color: #f2f2f2;
@@ -107,7 +108,7 @@
   transform: translateY(-50%);
   width: 24px;
   height: 16px;
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
 }
 
 .feedback-form__radio:hover + label::before,

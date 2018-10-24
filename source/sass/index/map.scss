@@ -1,16 +1,16 @@
 .map {
   position: relative;
 
-  &::before {
+  /*   &::before {
     content: "";
     position: absolute;
     top: 158px;
     left: 146px;
     width: 27px;
     height: 27px;
-    background-image: url("../../img/icon-map-marker.svg");
+    background-image: url("../img/icon-map-marker.svg");
     background-repeat: no-repeat;
-  }
+  } */
 }
 
 .map__img {
@@ -23,18 +23,18 @@
   .map {
     height: 360px;
 
-    &::before {
+    /*     &::before {
       top: 166px;
       left: 370px;
-    }
+    } */
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
-    &::before {
+    /*     &::before {
       top: 163px;
       left: 586px;
-    }
+    } */
   }
 }

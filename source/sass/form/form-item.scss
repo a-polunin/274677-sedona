@@ -81,11 +81,11 @@
 }
 
 .form-item__item--tel::after {
-  background-image: url("../../img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
 }
 
 .form-item__item--email::after {
-  background-image: url("../../img/icon-mail.svg");
+  background-image: url("../img/icon-mail.svg");
 }
 
 
@@ -133,7 +133,7 @@
     &::before,
     &::after {
       content: "";
-
+      display: block;
       flex-grow: 1;
       flex-shrink: 0;
 
@@ -161,6 +161,7 @@
     &::before,
     &::after {
       content: "";
+      display: block;
 
       flex-grow: 1;
       flex-shrink: 0;
@@ -188,7 +189,7 @@
     &::before,
     &::after {
       content: "";
-
+      display: block;
       flex-grow: 1;
       flex-shrink: 0;
 

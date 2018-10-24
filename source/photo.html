@@ -5,13 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale = 1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="desktop-container">
     <header class="page-header page-header--photo">
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -159,19 +162,19 @@
           <button type="button" class="video-controls__repeat">
             <span class="visually-hidden">Повтор</span>
             <svg class="video-controls__repeat-icon" width="16px" height="20px">
-              <use xlink:href="/img/sprite.svg#icon-repeat"></use>
+              <use xlink:href="#icon-video-replay"></use>
             </svg>
           </button>
           <button type="button" class="video-controls__subs">
             <span class="visually-hidden">Субтитры</span>
             <svg class="video-controls__subs-icon" width="32px" height="20px">
-              <use xlink:href="/img/sprite.svg#icon-subs"></use>
+              <use xlink:href="#icon-video-subtitles"></use>
             </svg>
           </button>
           <button type="button" class="video-controls__fullscreen">
             <span class="visually-hidden">Полноэкранный режим</span>
             <svg class="video-controls__fullscreen-icon" width="20px" height="20px">
-              <use xlink:href="/img/sprite.svg#icon-fullscreen"></use>
+              <use xlink:href="#icon-video-fullscreen"></use>
             </svg>
           </button>
         </div>

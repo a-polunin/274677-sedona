@@ -7,6 +7,9 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <script src="./js/picturefill.js"></script>
 </head>
 
 <body>
@@ -37,7 +40,7 @@
         </picture>
       </a>
       <div class="page-header__main-picture-container page-header__main-picture-container--fullsize">
-        <img src="./img/text-sedona-index.svg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--full-size">
+        <img src="./img/text-sedona-index.svg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--full-size" width="460" height="350">
         <span class="visually-hidden">Добро пожаловать в седону</span>
       </div>
 
@@ -60,7 +63,7 @@
             <picture class="reason__img-container">
               <source type="image/webp" media="(min-width: 1200px)" srcset="./img/main-city-desktop@1x.webp 1x, ./img/main-city-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.webp 1x, ./img/main-city-tablet@2x.webp 2x">
-              <source type="image/webp" src="./img/main-city-mobile@1x.webp" srcset="./img/main-city-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="./img/main-city-mobile@1x.webp 1x, ./img/main-city-mobile@2x.webp 2x">
 
               <source media="(min-width: 1200px)" srcset="./img/main-city-desktop@1x.jpg 1x, ./img/main-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.jpg 1x, ./img/main-city-tablet@2x.jpg 2x">
@@ -77,7 +80,7 @@
             <picture class="reason__img-container">
               <source type="image/webp" media="(min-width:1200px)" srcset="./img/main-bridge-desktop@1x.webp 1x, ./img/main-bridge-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width:768px)" srcset="./img/main-bridge-tablet@1x.webp 1x, ./img/main-bridge-tablet@2x.webp 2x">
-              <source type="image/webp" src="./img/main-bridge-mobile@1x.webp" srcset="./img/main-bridge-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="./img/main-bridge-mobile@1x.webp 1x, ./img/main-bridge-mobile@2x.webp 2x">
 
               <source media="(min-width:1200px)" srcset="./img/main-bridge-desktop@1x.jpg 1x, ./img/main-bridge-desktop@2x.jpg 2x">
               <source media="(min-width:768px)" srcset="./img/main-bridge-tablet@1x.jpg 1x, ./img/main-bridge-tablet@2x.jpg 2x">
@@ -130,15 +133,16 @@
         <a href="#" class="find-hotel__btn find-hotel__btn">Найти гостиницу</a>
       </div>
       <div class="map">
-        <picture>
+        <!-- <picture>
           <source type="image/webp" media="(min-width:1200px)" srcset="./img/bg-map-desktop@1x.webp 1x, ./img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width:768px)" srcset="./img/bg-map-tablet@1x.webp 1x, ./img/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp" src="./img/bg-map-mobile@1x.webp" srcset="./img/bg-map-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="./img/bg-map-mobile@1x.webp 1x, ./img/bg-map-mobile@2x.webp 2x">
 
           <source media="(min-width:1200px)" srcset="./img/bg-map-desktop@1x.jpg 1x, ./img/bg-map-desktop@2x.jpg 2x">
           <source media="(min-width:768px)" srcset="./img/bg-map-tablet@1x.jpg 1x, ./img/bg-map-tablet@2x.jpg 2x">
           <img src="./img/bg-map-mobile@1x.jpg" srcset="./img/bg-map-mobile@2x.jpg 2x" alt="Седона на карте" class="map__img">
-        </picture>
+        </picture> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d591920.6181437717!2d-111.97284797370286!3d34.959277524592856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1540413282086" class="map__img" width="600" height="450" style="border:0" allowfullscreen></iframe>
 
       </div>
     </main>
@@ -159,11 +163,11 @@
       </div>
       <div class="developed-by">
         <b class="developed-by__description">Разработано</b>
-        <img src="./img/logo-htmlacademy.svg" alt="HTML Academy" class="developed-by__img">
+        <img src="./img/logo-htmlacademy.svg" alt="HTML Academy" class="developed-by__img" width="27" height="34">
       </div>
     </footer>
   </div>
-  <script src="./js/index.js"></script>
+  <script src="./js/index.min.js"></script>
 </body>
 
 </html>

@@ -4,8 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale = 1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 
 <body>
@@ -36,7 +39,7 @@
         </picture>
       </a>
       <div class="page-header__main-picture-container page-header__main-picture-container--minsize">
-        <img src="./img/text-sedona.svg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--min-size">
+        <img src="./img/text-sedona.svg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--min-size" width="460" height="80">
         <span class="visually-hidden">Добро пожаловать в седону</span>
       </div>
 
@@ -73,12 +76,12 @@
               <label for="input-phone" class="feedback-form__label feedback-form__label--tel"><span>Контактный</span>
                 телефон*:</label>
               <input type="tel" class="feedback-form__input feedback-form__input--contact" placeholder="Введите телефон"
-                id="input-phone" name="input-phone">
+                id="input-phone" name="input-phone" required>
             </div>
             <div class="form-item__item form-item__item--contact form-item__item--email">
               <label for="input-email" class="feedback-form__label feedback-form__label--mail">Электронная почта*:</label>
               <input type="email" class="feedback-form__input feedback-form__input--contact" placeholder="Введите e-mail"
-                id="input-email" name="input-email">
+                id="input-email" name="input-email" required>
             </div>
           </div>
         </fieldset>
@@ -149,11 +152,11 @@
       </div>
       <div class="developed-by">
         <b class="developed-by__description">Разработано</b>
-        <img src="./img/logo-htmlacademy.svg" alt="HTML Academy" class="developed-by__img">
+        <img src="./img/logo-htmlacademy.svg" alt="HTML Academy" class="developed-by__img" width="27" height="34">
       </div>
     </footer>
   </div>
-  <script src="./js/index.js"></script>
+  <script src="./js/index.min.js"></script>
 </body>
 
 </html>

@@ -71,9 +71,10 @@
     padding-top: 57px;
   }
 
-  .city-list__description br{
+  .city-list__description br {
     display: inline;
   }
+
   .city-list__title {
     font-size: 21px;
     margin-bottom: 23px;
@@ -125,9 +126,5 @@
 @media (min-width: $desktop-width) {
   .city-list__item {
     padding-bottom: 82px;
-  }
-
-  .city-list__description br {
-    display: inline;
   }
 }

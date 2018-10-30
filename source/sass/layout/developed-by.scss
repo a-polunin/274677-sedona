@@ -11,8 +11,20 @@
 
 @media (min-width: $tablet-width) {
   .developed-by {
+    display: flex;
     align-self: flex-start;
-    margin-top: 4px;
+    align-items: center;
+    margin-top: 6px;
+  }
+
+  .developed-by__img {
+    width: auto;
+    margin-left: 12px;
+    margin-bottom: 0;
+  }
+
+  .developed-by__description {
+    letter-spacing: 0.02em;
   }
 }
 

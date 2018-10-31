@@ -7,6 +7,14 @@
   display: inline-block;
   margin-left: 10px;
   margin-bottom: -10px;
+  &:hover,
+  &:focus{
+    fill: #81b3d2;
+  }
+
+  &:active{
+    fill: #b2b2b2;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -18,7 +26,6 @@
   }
 
   .developed-by__img {
-    width: auto;
     margin-left: 12px;
     margin-bottom: 0;
   }
@@ -30,6 +37,6 @@
 
 @media (min-width: $desktop-width) {
   .developed-by {
-    margin-top: 2px;
+    margin-top: 5px;
   }
 }

@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
   <script src="./js/picturefill.js"></script>
 </head>
 
@@ -189,19 +191,23 @@
       <div class="page-footer__contacts contacts">
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--tw">
-            <a href="#" class="contacts__link"></a>
+            <a href="#" class="contacts__link"><span class="visually-hidden">Twiiter</span></a>
           </li>
           <li class="contacts__item contacts__item--fb">
-            <a href="#" class="contacts__link"></a>
+            <a href="#" class="contacts__link"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li class="contacts__item contacts__item--yt">
-            <a href="#" class="contacts__link"></a>
+            <a href="#" class="contacts__link"><span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
       </div>
       <div class="developed-by">
         <b class="developed-by__description">Разработано</b>
-        <img src="./img/logo-htmlacademy.svg" alt="HTML Academy" class="developed-by__img" width="27" height="34">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="developed-by__img" width="27" height="34">
+              <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </div>

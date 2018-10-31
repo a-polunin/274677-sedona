@@ -9,10 +9,15 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
   <script src="./js/picturefill.js"></script>
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="desktop-container">
     <header class="page-header page-header--form">
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -40,7 +45,8 @@
         </picture>
       </a>
       <div class="page-header__main-picture-container page-header__main-picture-container--minsize">
-        <img src="./img/text-sedona.svg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--min-size" width="460" height="80">
+        <img src="./img/text-sedona.svg" alt="Welcome to Sedona" class="page-header__main-picture page-header__main-picture--min-size"
+          width="460" height="80">
         <span class="visually-hidden">Добро пожаловать в седону</span>
       </div>
 
@@ -143,7 +149,8 @@
       <div class="success-popup">
         <div class="success-popup__wrapper">
           <h3 class="success-popup__header">Ваш отзыв отправлен!</h3>
-          <p class="success-popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+          <p class="success-popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее
+            время мы опубликуем его на сайте.</p>
         </div>
         <div class="success-popup__btn-container">
           <button type="button" class="success-popup__submit">Закрыть окно</button>
@@ -155,19 +162,23 @@
       <div class="page-footer__contacts contacts">
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--tw">
-            <a href="#" class="contacts__link"></a>
+            <a href="#" class="contacts__link"><span class="visually-hidden">Twiiter</span></a>
           </li>
           <li class="contacts__item contacts__item--fb">
-            <a href="#" class="contacts__link"></a>
+            <a href="#" class="contacts__link"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li class="contacts__item contacts__item--yt">
-            <a href="#" class="contacts__link"></a>
+            <a href="#" class="contacts__link"><span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
       </div>
       <div class="developed-by">
         <b class="developed-by__description">Разработано</b>
-        <img src="./img/logo-htmlacademy.svg" alt="HTML Academy" class="developed-by__img" width="27" height="34">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="developed-by__img" width="27" height="34">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </div>

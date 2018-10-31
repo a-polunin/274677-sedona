@@ -7,12 +7,13 @@
   display: inline-block;
   margin-left: 10px;
   margin-bottom: -10px;
+
   &:hover,
-  &:focus{
+  &:focus {
     fill: #81b3d2;
   }
 
-  &:active{
+  &:active {
     fill: #b2b2b2;
   }
 }
